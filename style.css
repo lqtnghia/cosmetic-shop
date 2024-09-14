@@ -303,6 +303,38 @@
 
 /* -----------FLASHSALE-------------- */
 .flashsale-wrapper .container {
-  height: 200px;
+  height: auto;
   background-color: pink;
+}
+.sale-time-show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.time-section {
+  text-align: center;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  font-size: 24px;
+}
+
+.time-section span {
+  display: block;
+  font-size: 48px;
+}
+
+.time-section p {
+  margin-top: 10px;
+  font-size: 18px;
 }
