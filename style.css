@@ -113,6 +113,7 @@
   height: 30px;
   list-style: none;
   position: relative;
+  background-color: rgb(244, 119, 140);
 }
 
 .menu-nav-bar ul {
@@ -132,18 +133,18 @@
   height: 30px;
   text-align: center;
   line-height: 30px;
-  width: 200px;
+  width: 100%;
   border: 1px solid #ccc;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   margin: 0 10px;
-  color: red;
+  color: white;
   /* position: relative;  */
   /* Đảm bảo sub-menu hiển thị đúng */
 }
-
 .list-menu-nav-bar li:hover {
   cursor: pointer;
-  background-color: #f8f9fa; /* Thay đổi màu nền khi hover */
+  color: black;
+  background-color: rgb(244, 119, 140); /* Thay đổi màu nền khi hover */
 }
 
 .sub-menu {
@@ -151,6 +152,7 @@
   position: absolute;
   top: 100%;
   left: 0;
+  color: black;
   background-color: white;
   z-index: 1000;
   padding: 0;
