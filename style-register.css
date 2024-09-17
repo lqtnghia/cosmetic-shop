@@ -1,0 +1,283 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ----------HEADER-------- */
+/* ------ notify ----------- */
+.bg-gradient {
+  background: linear-gradient(
+    90deg,
+    rgb(255, 212, 0) 0%,
+    rgb(199, 49, 48) 50.52%,
+    rgb(102, 54, 149) 99.61%
+  ) !important;
+}
+
+.sub-bg-gradient {
+  height: 5px;
+  background: linear-gradient(
+    90deg,
+    rgb(255, 212, 0) 0%,
+    rgb(199, 49, 48) 50.52%,
+    rgb(102, 54, 149) 99.61%
+  );
+}
+
+.menu-content {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 20px;
+  align-items: center;
+}
+
+.menu-item {
+  white-space: nowrap; /* Ngăn không cho xuống dòng */
+  color: white;
+}
+
+.separator {
+  width: 2px;
+  height: 2px;
+  border-radius: 50px;
+  background-color: white;
+}
+
+/* ---------nav-bar-------------- */
+.nav-bar {
+  display: flex;
+  height: 80px;
+  background-color: white;
+  align-items: center;
+}
+
+.nav-bar .logo {
+  margin-left: 100px;
+}
+
+.search-box {
+  margin: 0 50px;
+}
+
+.search-form {
+  background-color: white;
+  border-radius: 30px;
+  background-color: rgb(235, 226, 226);
+}
+
+.search-test {
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 15px;
+  padding: 10px 20px;
+  min-width: 300px;
+}
+
+.search-button {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  padding: 9.5px 10px;
+  border-radius: 50px;
+  background-color: rgb(235, 226, 226);
+}
+
+.infor {
+  display: flex;
+  width: 600px;
+  white-space: nowrap;
+  font-size: 16px;
+}
+
+.infor-shop {
+  padding: 0 10px;
+  border-right: 1px solid black;
+}
+
+.infor a {
+  padding-left: 10px;
+  text-decoration: none;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.infor-client {
+  margin-right: 100px;
+}
+
+/* -----menu-nav-bar------ */
+.menu-nav-bar {
+  height: 30px;
+  list-style: none;
+  position: relative;
+  background-color: rgb(244, 119, 140);
+}
+
+.menu-nav-bar ul {
+  list-style: none;
+  font-size: 20px;
+  padding: 0;
+  font-family: inherit;
+}
+
+.list-menu-nav-bar {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin: 0px 50px;
+}
+
+.list-menu-nav-bar > li {
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  width: 100%;
+  border: 1px solid #ccc;
+  /* border-radius: 10px; */
+  margin: 0 10px;
+  color: white;
+  /* position: relative;  */
+  /* Đảm bảo sub-menu hiển thị đúng */
+}
+.list-menu-nav-bar li:hover {
+  cursor: pointer;
+  color: black;
+  background-color: rgb(244, 119, 140); /* Thay đổi màu nền khi hover */
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  color: black;
+  background-color: white;
+  z-index: 1000;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.list-menu-nav-bar li:hover > .sub-menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+  text-align: left;
+}
+
+.sub-menu .text-list-menu {
+  padding: 10px;
+}
+
+.sub-menu .img-sub-menu img {
+  width: 100%;
+  height: auto;
+}
+
+.sub-menu li:hover {
+  font-weight: bolder;
+}
+
+/* THÊM VIỀN PHẢI CHO CÁC THẺ TRONG GRID */
+.list-menu-nav-bar li:hover > .sub-menu > div {
+  border-right: 1px solid #ccc;
+}
+
+.list-menu-nav-bar li:hover > .sub-menu > div:last-child {
+  border-right: none; /* Loại bỏ border bên phải của cột cuối cùng */
+}
+
+/* ---------Carousel----------- */
+.container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+.login-bar {
+  height: 25px;
+  background-color: rgb(242, 242, 242);
+}
+.login-bar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.login-bar ul a {
+  text-decoration: none;
+  color: black;
+}
+.login-bar-1 {
+  color: #a39595;
+}
+
+.heading-login-bar,
+.other-method-login p {
+  padding-top: 20px;
+  text-align: center;
+}
+.heading-login-bar a {
+  color: black;
+}
+.required {
+  color: red;
+}
+.btn-login {
+  text-align: center;
+}
+label,
+.form-group {
+  padding-bottom: 10px;
+}
+.btn-login button {
+  width: 100%;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #d82e4d;
+  color: white;
+  font-size: 20px;
+  border: none;
+}
+.method-login {
+  display: grid;
+  gap: 20px;
+  justify-content: center;
+}
+.method-login button {
+  width: 200px;
+  height: 50px;
+}
+.method {
+  justify-content: center;
+  line-height: 45px;
+  color: white;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  border-radius: 10px;
+  border: none;
+}
+
+/* --------FOOTER------------ */
+footer {
+  margin-top: 50px;
+}
+footer .logo {
+  width: 80%;
+  margin-bottom: 20px;
+}
+footer .container .list-footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Chia thành 5 cột đều nhau */
+  gap: 20px; /* Khoảng cách giữa các thẻ */
+}
+ul.list-menu-footer {
+  list-style: none; /* Loại bỏ list-style */
+  padding-left: 0; /* Xóa khoảng cách thụt đầu dòng */
+}
+.list-menu-footer a {
+  text-decoration: none;
+  color: black;
+}
