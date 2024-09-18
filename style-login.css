@@ -3,7 +3,15 @@
   margin: 0;
   padding: 0;
 }
-
+header {
+  position: fixed;
+  top: 0; /* Đặt ở vị trí trên cùng của trang */
+  left: 0;
+  width: 100%; /* Để đảm bảo header chiếm toàn bộ chiều ngang */
+  z-index: 1000; /* Đảm bảo header nổi trên các thành phần khác */
+  background-color: white; /* Có thể thay đổi màu nền tùy ý */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tạo đổ bóng để header nổi bật */
+}
 /* ----------HEADER-------- */
 /* ------ notify ----------- */
 .bg-gradient {
