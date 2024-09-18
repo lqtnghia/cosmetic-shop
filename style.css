@@ -232,12 +232,17 @@ header {
   font-size: 25px;
   font-weight: bold;
 }
-.hot-product {
+/* .hot-product {
   height: auto;
   width: 100%;
   background-color: white;
   border-radius: 5px;
+} */
+.hot-product {
+  width: calc(100% / 5); /* Mỗi sản phẩm chiếm 1/5 của container */
+  flex-shrink: 0; /* Không cho phép sản phẩm co lại */
 }
+
 .hot-product a {
   text-decoration: none;
   color: black;
@@ -259,12 +264,17 @@ header {
   text-decoration: underline;
 }
 
-.list-hot-product {
+/* .list-hot-product {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* Chia thành 5 cột đều nhau */
-  gap: 20px; /* Khoảng cách giữa các thẻ */
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+} */
+.list-hot-product {
+  display: flex;
+  overflow: hidden; /* Ẩn các sản phẩm vượt quá chiều rộng */
+  gap: 20px; /* Khoảng cách giữa các sản phẩm */
+  width: 100%; /* Căn chỉnh theo chiều rộng container */
 }
-
 .price {
   text-align: center;
   font-weight: bold;
@@ -298,6 +308,31 @@ header {
 }
 .five-star li:nth-child(-n + 6) a {
   color: black; /* Số sao đã được chọn (sáng) */
+}
+.carousel-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  top: -200px; /* Điều chỉnh vị trí của nút */
+  left: -10px;
+}
+
+.carousel-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem; /* Tăng kích thước của biểu tượng mũi tên */
+  color: black; /* Màu của mũi tên */
+  padding: 10px;
+}
+
+.carousel-button:hover {
+  color: gray; /* Đổi màu khi hover */
+}
+
+.carousel-button i {
+  pointer-events: none;
 }
 
 /* ---------BTN SHOW-ALL----------- */
