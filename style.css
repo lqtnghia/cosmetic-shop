@@ -238,9 +238,9 @@ header {
   background-color: white;
   border-radius: 5px;
 } */
-.hot-product {
-  width: calc(100% / 5); /* Mỗi sản phẩm chiếm 1/5 của container */
-  flex-shrink: 0; /* Không cho phép sản phẩm co lại */
+.hot-selling-product .hot-product {
+  width: calc(100% / 5); /* Điều chỉnh chiều rộng của sản phẩm */
+  flex-shrink: 0; /* Ngăn không cho sản phẩm bị co lại */
 }
 
 .hot-product a {
@@ -269,7 +269,7 @@ header {
   grid-template-columns: repeat(5, 1fr);
   gap: 20px;
 } */
-.list-hot-product {
+.hot-selling-product .list-hot-product {
   display: flex;
   overflow: hidden; /* Ẩn các sản phẩm vượt quá chiều rộng */
   gap: 20px; /* Khoảng cách giữa các sản phẩm */
@@ -279,7 +279,21 @@ header {
   text-align: center;
   font-weight: bold;
 }
+.hot-product button {
+  margin-left: 18%;
+}
+.cart {
+  padding: 5px 10px;
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
 
+.cart:hover {
+  background-color: #e65c00; /* Thay đổi màu khi hover */
+}
 .star-rating {
   list-style: none;
   padding: 0;
@@ -351,6 +365,14 @@ header {
 
 /* -----------FLASHSALE-------------- */
 
+.flashsale-wrapper .hot-product {
+  /* height: auto;
+  width: 100%;
+  border-radius: 5px; */
+  background-color: white;
+  width: calc(100% / 5); /* Điều chỉnh chiều rộng của sản phẩm */
+  flex-shrink: 0; /* Ngăn không cho sản phẩm bị co lại */
+}
 .flashsale-wrapper .container {
   height: auto;
   background-color: rgb(238, 86, 111);
@@ -409,10 +431,11 @@ header {
   color: black;
 }
 .menu-list-flashsale {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr); /* Chia thành 5 cột đều nhau */
+  display: flex;
+  overflow: hidden;
   gap: 20px; /* Khoảng cách giữa các thẻ */
   margin-top: 30px;
+  width: 100%;
 }
 
 /* --------FOOTER------------ */
