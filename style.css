@@ -282,7 +282,7 @@ header {
 .hot-product button {
   margin-left: 18%;
 }
-.cart {
+.addcart {
   padding: 5px 10px;
   background-color: #ff6600;
   color: #fff;
@@ -291,7 +291,7 @@ header {
   border-radius: 5px;
 }
 
-.cart:hover {
+.addcart:hover {
   background-color: #e65c00; /* Thay đổi màu khi hover */
 }
 .star-rating {
@@ -366,12 +366,12 @@ header {
 /* -----------FLASHSALE-------------- */
 
 .flashsale-wrapper .hot-product {
-  /* height: auto;
+  height: auto;
   width: 100%;
-  border-radius: 5px; */
+  border-radius: 5px;
   background-color: white;
-  width: calc(100% / 5); /* Điều chỉnh chiều rộng của sản phẩm */
-  flex-shrink: 0; /* Ngăn không cho sản phẩm bị co lại */
+  /* width: calc(100% / 5); 
+  flex-shrink: 0;  */
 }
 .flashsale-wrapper .container {
   height: auto;
@@ -430,12 +430,18 @@ header {
   margin-top: 5px;
   color: black;
 }
-.menu-list-flashsale {
+/* .menu-list-flashsale {
   display: flex;
   overflow: hidden;
-  gap: 20px; /* Khoảng cách giữa các thẻ */
+  gap: 20px;
   margin-top: 30px;
   width: 100%;
+} */
+.menu-list-flashsale {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Chia thành 5 cột bằng nhau */
+  gap: 20px; /* Khoảng cách giữa các cột */
+  margin-top: 30px;
 }
 
 /* --------FOOTER------------ */
@@ -458,4 +464,33 @@ ul.list-menu-footer {
 .list-menu-footer a {
   text-decoration: none;
   color: black;
+}
+
+/* ------------------CART----------------- */
+.cart img {
+  width: 220px;
+  height: auto;
+  border-radius: 8px;
+}
+.cart {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  padding-top: 30px;
+}
+.cart table {
+  width: 100%;
+}
+.cart table thead tr th:first-child {
+  text-align: left;
+}
+.cart table tr td {
+  border-bottom: 1px solid #ddd;
+  padding: 12px 0;
+}
+.cart table thead tr th:last-child {
+  text-align: right;
+}
+.cart table tbody tr td:last-child {
+  text-align: right;
 }
