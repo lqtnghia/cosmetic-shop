@@ -89,6 +89,7 @@
 
     <link rel="stylesheet" href="style-login.css" />
     <link rel="stylesheet" href="style-footer.css" />
+    <link rel="stylesheet" href="style-info-product.css" />
     <title>Cometic Shop</title>
     <link href="path-to-bootstrap.css" rel="stylesheet" />
     <link href="your-custom-stylesheet.css" rel="stylesheet" />
@@ -229,116 +230,59 @@
               <a href="http://127.0.0.1:5501/index.html">Trang chủ</a>
               <span>&nbsp;/&nbsp;</span>
             </li>
-            <li><a href="">Tài khoản</a> <span>&nbsp;/&nbsp;</span></li>
-            <li class="login-bar-1">Đăng ký</li>
+            <li><a href="">Sản phẩm</a> <span>&nbsp;/&nbsp;</span></li>
+            <li class="login-bar-1">Thông tin</li>
           </ul>
         </div>
       </div>
-      <div class="login-form">
-        <div class="heading-login-bar">
-          <h2>Đăng ký tài khoản</h2>
-          <p>
-            Bạn đã có tài khoản ?
-            <a href="http://127.0.0.1:5501/login.html">Đăng nhập tại đây.</a>
-          </p>
+      <div class="product">
+        <div class="img-product">
+          <img
+            src="./img/img-hot-product/Son Thỏi Bóng Peripera Heart Jam Glow Lip 1.4g.webp"
+          />
         </div>
-        <div class="row">
-          <div
-            class="col-12 col-md-6 col-lg-5 offset-md-3 py-3 mx-auto bg-login"
-          >
-            <div class="page-login">
-              <form>
-                <div>
-                  <h4 style="text-align: center">Thông tin cá nhân</h4>
-                </div>
-                <div class="form-group">
-                  <label for="first-name"
-                    >Họ <span class="required">*</span></label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="first-name"
-                    placeholder="Họ"
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="last-name"
-                    >Tên <span class="required">*</span></label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="last-name"
-                    placeholder="Tên"
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="phone-number"
-                    >Số điện thoại <span class="required">*</span></label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="phone-number"
-                    placeholder="Số điện thoại"
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="email"
-                    >Email <span class="required">*</span></label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="email"
-                    placeholder="Email"
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="password"
-                    >Password <span class="required">*</span></label
-                  >
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="password"
-                    placeholder="Password"
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="re-enter-password"
-                    >Re-enter password <span class="required">*</span></label
-                  >
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="re-enter-password"
-                    placeholder="Password"
-                  />
-                </div>
-                <div class="btn-login">
-                  <button type="submit">Đăng Ký</button>
-                </div>
-              </form>
+        <div class="detail-product">
+          <div class="head-detail">
+            <div class="info-product">
+              <h5>Beplain</h5>
+              <h6 class="descri-product">
+                Son Thỏi Bóng Peripera Heart Jam Glow Lip 1.4g
+              </h6>
+              <div class="price"><span>320.000</span><sup>đ</sup></div>
+              <div class="rating">
+                <a>
+                  <ul class="star-rating 5-star">
+                    <a href="#"> </a>
+                    <li><a href="#"></a><a href="#">★</a></li>
+                    <li><a href="#">★</a></li>
+                    <li><a href="#">★</a></li>
+                    <li><a href="#">★</a></li>
+                    <li><a href="#">★</a></li>
+                  </ul>
+                </a>
+              </div>
             </div>
-            <div class="other-method-login">
-              <p>Hoặc đăng nhập bằng</p>
-              <div class="method-login">
-                <button
-                  class="method"
-                  style="background-color: rgb(221, 75, 57)"
-                >
-                  <div><i class="fa-brands fa-google-plus-g"></i></div>
-                  <div>Đăng nhập Google</div>
-                </button>
-                <button
-                  class="method"
-                  style="background-color: rgb(59, 89, 152)"
-                >
-                  <div><i class="fa-brands fa-facebook"></i></div>
-                  <div>Đăng nhập Facebook</div>
-                </button>
+          </div>
+
+          <div class="foot-detail">
+            <div class="purchase-form">
+              <h5>Hình thức mua hàng</h5>
+              <div>
+                <input type="radio" />
+                Giao hàng
+              </div>
+              <div>
+                <input type="radio" />
+                Mua hàng và lấy hàng tại cửa hàng
+                <span
+                  >Chọn cửa hàng <i class="fa-solid fa-chevron-down"></i
+                ></span>
+              </div>
+              <div class="payment">
+                <button class="minus">-</button>
+                <input type="number" value="1" min="1" />
+                <button class="plus">+</button>
+                <button class="addcart">Thêm vào giỏ hàng</button>
               </div>
             </div>
           </div>
@@ -516,6 +460,8 @@
     <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
     <!-- CountDownTimer -->
     <script src="countDownTimer.js"></script>
+
+    <script src="inputNumber.js"></script>
   </body>
 </html>
 |

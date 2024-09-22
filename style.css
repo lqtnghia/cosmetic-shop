@@ -439,29 +439,32 @@ header {
   vertical-align: baseline;
 }
 
-/* --------FOOTER------------ */
-footer {
-  margin-top: 50px;
-}
-footer .logo {
-  width: 80%;
-  margin-bottom: 20px;
-}
-footer .container .list-footer {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Chia thành 5 cột đều nhau */
-  gap: 20px; /* Khoảng cách giữa các thẻ */
-}
-ul.list-menu-footer {
-  list-style: none; /* Loại bỏ list-style */
-  padding-left: 0; /* Xóa khoảng cách thụt đầu dòng */
-}
-.list-menu-footer a {
-  text-decoration: none;
-  color: black;
+/* ------------------CART----------------- */
+.cart {
+  position: fixed;
+  height: 100vh;
+  width: 500px;
+  right: -100%;
+  top: 134px;
+  background-color: white;
+  padding: 12px 20px;
+  overflow-y: scroll;
 }
 
-/* ------------------CART----------------- */
+.cart i {
+  cursor: pointer;
+}
+
+.cart button {
+  margin-top: 12px;
+  height: 30px;
+  padding: 0 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: aquamarine;
+}
+
 .cart img {
   width: 220px;
   height: auto;
