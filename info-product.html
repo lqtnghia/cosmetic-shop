@@ -74,25 +74,16 @@
     />
     <link rel="manifest" href="/Favicon/manifest.json" />
     <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta
-      name="msapplication-TileImage"
-      content="./Favicon/ms-icon-144x144.png"
-    />
-    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style-info-product.css" />
+    <link rel="stylesheet" href="style-footer.css" />
+
     <!-- Font-awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
-    <!-- Bootstrap CSS (Local) -->
-    <link href="bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet" />
-
-    <link rel="stylesheet" href="style-login.css" />
-    <link rel="stylesheet" href="style-footer.css" />
-    <link rel="stylesheet" href="style-info-product.css" />
-    <title>Cometic Shop</title>
-    <link href="path-to-bootstrap.css" rel="stylesheet" />
-    <link href="your-custom-stylesheet.css" rel="stylesheet" />
+    <title>Thông Tin Sản Phẩm</title>
   </head>
   <body>
     <div class="cometic-shop">
@@ -223,70 +214,9 @@
           </ul>
         </section>
       </header>
-      <div class="login-bar" style="padding-top: 140px">
-        <div class="container">
-          <ul>
-            <li>
-              <a href="http://127.0.0.1:5501/index.html">Trang chủ</a>
-              <span>&nbsp;/&nbsp;</span>
-            </li>
-            <li><a href="">Sản phẩm</a> <span>&nbsp;/&nbsp;</span></li>
-            <li class="login-bar-1">Thông tin</li>
-          </ul>
-        </div>
-      </div>
-      <div class="product">
-        <div class="img-product">
-          <img
-            src="./img/img-hot-product/Son Thỏi Bóng Peripera Heart Jam Glow Lip 1.4g.webp"
-          />
-        </div>
-        <div class="detail-product">
-          <div class="head-detail">
-            <div class="info-product">
-              <h5>Beplain</h5>
-              <h6 class="descri-product">
-                Son Thỏi Bóng Peripera Heart Jam Glow Lip 1.4g
-              </h6>
-              <div class="price"><span>320.000</span><sup>đ</sup></div>
-              <div class="rating">
-                <a>
-                  <ul class="star-rating 5-star">
-                    <a href="#"> </a>
-                    <li><a href="#"></a><a href="#">★</a></li>
-                    <li><a href="#">★</a></li>
-                    <li><a href="#">★</a></li>
-                    <li><a href="#">★</a></li>
-                    <li><a href="#">★</a></li>
-                  </ul>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="foot-detail">
-            <div class="purchase-form">
-              <h5>Hình thức mua hàng</h5>
-              <div>
-                <input type="radio" />
-                Giao hàng
-              </div>
-              <div>
-                <input type="radio" />
-                Mua hàng và lấy hàng tại cửa hàng
-                <span
-                  >Chọn cửa hàng <i class="fa-solid fa-chevron-down"></i
-                ></span>
-              </div>
-              <div class="payment">
-                <button class="minus">-</button>
-                <input type="number" value="1" min="1" />
-                <button class="plus">+</button>
-                <button class="addcart">Thêm vào giỏ hàng</button>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="product" style="padding-top: 140px">
+        <div class="img-product"></div>
+        <div class="detail-product"></div>
       </div>
       <footer>
         <div class="container">
@@ -456,12 +386,8 @@
         </div>
       </footer>
     </div>
-    <!-- Bootstrap JS (Local) -->
-    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
-    <!-- CountDownTimer -->
-    <script src="countDownTimer.js"></script>
-
+    <script src="showInfoProduct.js"></script>
     <script src="inputNumber.js"></script>
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
-|
