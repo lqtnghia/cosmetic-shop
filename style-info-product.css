@@ -361,3 +361,14 @@ h6 {
   align-self: center; /* Căn giữa */
   margin: 0 auto; /* Cách đều 10% mỗi bên */
 }
+
+/* Ẩn tăng giảm mặc định của input số lượng */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Hide the arrows in Firefox */
+}

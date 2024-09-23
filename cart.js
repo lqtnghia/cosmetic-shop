@@ -65,7 +65,7 @@ function cartTotal() {
   }
 
   var cartTotalA = document.querySelector(".price-total span");
-  cartTotalA.innerHTML = totalC.toLocaleString("de-DE") + "<sup>đ</sup>";
+  cartTotalA.innerHTML = totalC.toLocaleString("de-DE");
 }
 
 // Hàm thêm sự kiện thay đổi số lượng cho các ô nhập
