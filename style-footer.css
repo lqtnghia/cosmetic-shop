@@ -25,6 +25,9 @@ ul.list-menu-footer {
   height: 100%;
   border-radius: 8px;
 }
+
+/* ---------------<div class="parallax">------------ */
+
 /* Thiết lập cho thẻ parallax */
 .parallax {
   position: relative;
