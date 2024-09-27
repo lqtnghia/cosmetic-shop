@@ -65,12 +65,12 @@ const productContainer = document.querySelector(".list-hot-product");
 
 products.forEach((product) => {
   const productHTML = `
-    <div class="hot-product">
+    <div class="product">
       <a href="info-product.html?id=${product.id}">
-        <div class="img-hot-product">
+        <div class="img-product">
           <img src="${product.img}" />
         </div>
-        <div class="detail-hot-product">
+        <div class="detail-product">
           <h6>${product.brand}</h6>
           <span>${product.name}</span>
           <div class="price">

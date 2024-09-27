@@ -20,12 +20,12 @@ const flashSaleContainer = document.querySelector(".menu-list-flashsale");
 
 flsproducts.forEach((product) => {
   const productHTML = `
-    <div class="hot-product">
+    <div class="product">
       <a href="#">
-        <div class="img-hot-product">
+        <div class="img-product">
           <img src="${product.img}" />
         </div>
-        <div class="detail-hot-product">
+        <div class="detail-product">
           <h6>${product.brand}</h6>
           <span>${product.name}</span>
           <div class="price"><span>${product.price.toLocaleString()}<sup>đ</sup></span></div>

@@ -1,11 +1,11 @@
 function attachAddToCartEvents() {
-  const btn = document.querySelectorAll(".hot-product button");
+  const btn = document.querySelectorAll(".product button");
 
   btn.forEach(function (button) {
     button.addEventListener("click", function (event) {
       event.preventDefault();
       var btnItem = event.target;
-      var product = btnItem.closest(".hot-product");
+      var product = btnItem.closest(".product");
       var productImg = product.querySelector("img").src;
       var productName = product.querySelector("span").innerText;
       var productPrice = product.querySelector(".price span").innerText;

@@ -202,15 +202,15 @@ header {
   font-size: 25px;
   font-weight: bold;
 }
-.hot-selling-product .hot-product {
+.hot-selling-product .product {
   width: calc(100% / 5); /* Điều chỉnh chiều rộng của sản phẩm */
   flex-shrink: 0; /* Ngăn không cho sản phẩm bị co lại */
 }
-.hot-product a {
+.product a {
   text-decoration: none;
   color: black;
 }
-.detail-hot-product span {
+.detail-product span {
   font-size: 10px;
   line-clamp: 2;
   display: -webkit-box; /* Sử dụng hộp linh hoạt */
@@ -221,11 +221,11 @@ header {
   height: 32px; /* Chiều cao cố định của 2 dòng, điều chỉnh theo kích thước font */
   line-height: 16px; /* Điều chỉnh khoảng cách giữa các dòng */
 }
-.detail-hot-product h6 {
+.detail-product h6 {
   text-align: center;
   cursor: pointer;
 }
-.detail-hot-product h6:hover {
+.detail-product h6:hover {
   text-decoration: underline;
 }
 .hot-selling-product .list-hot-product {
@@ -248,7 +248,7 @@ header {
   vertical-align: baseline;
   color: #e65c00;
 }
-.hot-product button {
+.product button {
   margin-left: 19%;
 }
 .addcart {
@@ -319,7 +319,7 @@ header {
 /* -----------FLASHSALE-------------- */
 /* -----------<div class="flashsale-wrapper">---------- */
 
-.flashsale-wrapper .hot-product {
+.flashsale-wrapper .product {
   height: auto;
   width: 100%;
   border-radius: 5px;
