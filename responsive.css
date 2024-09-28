@@ -1,24 +1,125 @@
 /* =================== PC ==================== */
 @media (min-width: 992px) {
+  /* 1. Ẩn đi phần mobile header  */
+  .mobile-header {
+    display: none !important;
+    height: 0;
+    visibility: hidden;
+  }
 }
 
 /* =================== Tablet & mobile ==================== */
 @media (max-width: 991.98px) {
-  /* 1. Ẩn đi thanh tìm kiếm và thông tin liên lạc đăng nhập */
-  .infor {
+  /* 1. Ẩn đi thanh tìm kiếm và thông tin liên lạc đăng nhập và menu-nav-bar */
+  .infor,
+  .search-box,
+  .menu-nav-bar {
     display: none;
   }
-  header {
-    max-width: 991.98px;
-  }
-  /* .header__logo {
+  /* 2. CHuyển logo vào giữa */
+  .nav-bar {
     position: relative;
+    height: 60px;
+    display: flex;
+    justify-content: center;
   }
   .img__logo {
+    /* position: absolute;
+    bottom: 15%; */
+    margin-left: 40px;
+    width: 50%;
+  }
+  /* 3. Căn lại vị trí menu icon, cart icon */
+  .menu-header__icon {
     position: absolute;
-    left: 0;
-    display: none;
-  } */
+    top: 40%;
+    left: 5%;
+    width: 24px;
+    z-index: 2;
+  }
+  .cart--mobile {
+    position: absolute;
+    right: 5%;
+    font-size: 25px;
+    top: 35%;
+  }
+  .cart--mobile .store--mobile,
+  .login--mobile .login {
+    color: black;
+  }
+  /* 4. overlay */
+  .menu-overlay {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.3);
+    inset: 0;
+    z-index: 1;
+    /* bình thường ẩn overlay đi */
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+  }
+  /* 5. Kiểm tra nếu checkbox được check thì hiện overlay */
+  .menu-checkbox:checked ~ .menu-overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+  /* 6. code cho menu drawer */
+  .menu-drawer {
+    position: fixed;
+    background-color: rgb(254, 254, 254);
+    inset: 0 40% 0 0;
+    z-index: 2;
+    transform: translateX(-100%);
+    transition: 0.5s;
+    /* padding: 60px; */
+  }
+  /* 7. Kiểm tra nếu checkbox được check hiện menu */
+  .menu-checkbox:checked ~ .menu-drawer {
+    transform: translateX(0);
+  }
+  /* 8. menu top */
+  .close-menu {
+    width: 24px;
+    color: #010000;
+  }
+  .menu-drawer__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #navbar__list--mobile {
+    margin-top: 25px;
+    flex-direction: column;
+    /* list-style-type: none; */
+
+    padding-left: 0;
+  }
+  #navbar__list--mobile li {
+    height: 30px;
+  }
+  .navbar__link {
+    display: block;
+    text-decoration: none;
+    color: black;
+  }
+  #navbar__list--mobile li:hover {
+    background-color: antiquewhite;
+    font-weight: bold;
+  }
+
+  /* 9. Chỉnh kích thước img__logo--mobile */
+  .img__logo--mobile {
+    width: 150px;
+    margin-left: 50px;
+    margin-top: 10px;
+  }
+  /* 10. Login mobile */
+  /* 11. Cart mobile */
+  .cart {
+    width: 100%;
+    z-index: 3;
+    top: 80px;
+  }
 }
 
 /* =================== Tablet ==================== */

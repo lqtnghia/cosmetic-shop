@@ -133,8 +133,17 @@ function deleteCart() {
 // Hiển thị/Ẩn giỏ hàng
 const cartbtn = document.querySelector(".fa-x");
 const cartshow = document.querySelector(".store");
+const cartshowmobile = document.querySelector(".store--mobile");
 
 cartshow.addEventListener("click", function () {
+  document.querySelector(".cart").style.right = "0";
+});
+
+cartbtn.addEventListener("click", function () {
+  document.querySelector(".cart").style.right = "-100%";
+});
+
+cartshowmobile.addEventListener("click", function () {
   document.querySelector(".cart").style.right = "0";
 });
 

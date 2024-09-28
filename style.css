@@ -8,7 +8,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000; /* Đảm bảo header nổi trên các thành phần khác */
+  z-index: 1; /* Đảm bảo header nổi trên các thành phần khác */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tạo đổ bóng để header nổi bật */
 }
 /* ----------HEADER-------- */
@@ -148,7 +148,7 @@ header {
   top: 100%;
   left: 0;
   background-color: white;
-  z-index: 1000;
+  z-index: 1;
   /* width: 100vw; */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -196,6 +196,9 @@ header {
   display: grid;
   grid-template-rows: 1fr 1fr;
   gap: 10px;
+}
+#carouselExampleIndicators {
+  z-index: 0;
 }
 
 /* -----HOT PRODUCT------ */
