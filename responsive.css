@@ -3,16 +3,34 @@
 }
 
 /* =================== Tablet & mobile ==================== */
-@media (max-width: 991.98) {
-  .nav-bar {
-    display: none !important; /* Ẩn trên màn hình nhỏ hơn (tablet và mobile) */
+@media (max-width: 991.98px) {
+  /* 1. Ẩn đi thanh tìm kiếm và thông tin liên lạc đăng nhập */
+  .infor {
+    display: none;
   }
+  header {
+    max-width: 991.98px;
+  }
+  /* .header__logo {
+    position: relative;
+  }
+  .img__logo {
+    position: absolute;
+    left: 0;
+    display: none;
+  } */
 }
 
 /* =================== Tablet ==================== */
-@media (min-width: 768px) and (max-width: 991.98) {
+@media (min-width: 768px) and (max-width: 991.98px) {
 }
 
 /* =================== mobile ==================== */
 @media (max-width: 767.98px) {
+  .search-box {
+    display: none;
+  }
+  header {
+    max-width: 767.98px;
+  }
 }

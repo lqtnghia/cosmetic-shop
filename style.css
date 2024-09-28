@@ -45,7 +45,7 @@ header {
 }
 
 .separator {
-  width: 2px;
+  /* width: 2px; */
   height: 2px;
   border-radius: 50px;
   background-color: white;
@@ -53,6 +53,7 @@ header {
 
 /* ---------<section class="nav-bar">------------- */
 .nav-bar {
+  width: 100%;
   display: flex;
   height: 80px;
   background-color: white;
@@ -70,6 +71,7 @@ header {
 .search-form {
   background-color: white;
   border-radius: 30px;
+  display: flex;
   background-color: rgb(235, 226, 226);
 }
 .search-button {
@@ -86,12 +88,12 @@ header {
   outline: none;
   font-size: 15px;
   padding: 10px 20px;
-  min-width: 300px;
+  /* min-width: 300px; */
 }
 
 .infor {
   display: flex;
-  width: 600px;
+  /* width: 600px; */
   white-space: nowrap;
   font-size: 16px;
 }
@@ -124,7 +126,7 @@ header {
 }
 .list-menu-nav-bar {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   margin: 0px 60px;
 }
 .list-menu-nav-bar > li {
@@ -147,7 +149,7 @@ header {
   left: 0;
   background-color: white;
   z-index: 1000;
-  width: 100vw;
+  /* width: 100vw; */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .list-menu-nav-bar li:hover > .sub-menu {
@@ -316,90 +318,5 @@ header {
   font-size: 15px;
   padding: 5px 20px;
   border-radius: 20px;
-  width: 120px;
-}
-
-/* -----------FLASHSALE-------------- */
-/* -----------<div class="flashsale-wrapper">---------- */
-
-.flashsale-wrapper .product {
-  height: auto;
-  width: 100%;
-  border-radius: 5px;
-  background-color: white;
-  /* width: calc(100% / 5); 
-  flex-shrink: 0;  */
-}
-.flashsale-wrapper .container {
-  height: auto;
-  background-color: rgb(238, 86, 111);
-  margin-top: 20px;
-  border-radius: 20px;
-}
-.flashsale-wrapper .show-all button {
-  cursor: pointer;
-  font-size: 15px;
-  border: none;
-  background-color: white;
-  color: rgb(209, 57, 82);
-  border-radius: 5px;
-  width: 120px;
-}
-.logo-flashsale {
-  height: 80px;
-  /* width: 300px; */
-}
-.flashsale-wrapper .container .flashsale {
-  padding: 30px 0;
-}
-.sale-time-show {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80px;
-  font-family: Arial, sans-serif;
-  gap: 120px;
-}
-.countdown-timer {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.time-section {
-  text-align: center;
-  background-color: white;
-  height: 30px;
-  width: 100px;
-  border-radius: 10px;
-  color: white;
-  font-size: 24px;
-}
-
-.time-section span {
-  display: block;
-  font-size: 20px;
-  color: #333;
-}
-
-.time-section .label {
-  font-size: 20px;
-  margin-top: 5px;
-  color: black;
-}
-.menu-list-flashsale {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr); /* Chia thành 5 cột bằng nhau */
-  gap: 20px; /* Khoảng cách giữa các cột */
-  margin-top: 30px;
-}
-.flashsale-wrapper .price span {
-  white-space: nowrap;
-  line-height: 40px;
-  font-size: 15px;
-}
-
-.flashsale-wrapper .price sup {
-  font-size: 70%;
-  vertical-align: baseline;
+  /* width: 120px; */
 }
