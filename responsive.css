@@ -11,30 +11,42 @@
   }
 }
 
-/* =================== Tablet & mobile ==================== */
+/* =================== tablets, landscape mode, small laptops ==================== */
 @media (max-width: 991.98px) {
   /* 1. Ẩn đi thanh tìm kiếm và thông tin liên lạc đăng nhập và menu-nav-bar */
-  .infor,
-  .search-box,
-  .menu-nav-bar {
+  .login-store {
     display: none;
   }
   /* 2. CHuyển logo vào giữa */
   .nav-bar {
     position: relative;
-    height: 60px;
+    /* height: 60px; */
     display: flex;
     justify-content: center;
+    align-items: center;
   }
-  .img__logo {
-    /* position: absolute;
-    bottom: 15%; */
-    /* margin-left: 40px; */
-    width: 50%;
+  .nav-bar .logo {
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+  .nav-bar .search-form {
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+  }
+  /* .img__logo { */
+  /* position: absolute;
+    bottom: 15%; */
+  /* margin-left: 40px; */
+  /* width: 50%;
+    margin: 0 auto; */
+  /* } */
   /* 3. Căn lại vị trí menu icon, cart icon */
-  .menu-header__icon {
+  /* .menu-header__icon {
     position: absolute;
     top: 40%;
     left: 5%;
@@ -50,7 +62,7 @@
   .cart--mobile .store--mobile,
   .login--mobile .login {
     color: black;
-  }
+  } */
   /* 4. overlay */
   .menu-overlay {
     position: fixed;
@@ -155,19 +167,89 @@
     /* display: flex;
     justify-content: center; */
   }
+
+  .menu-nav-bar .list-nav-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
 }
 
-/* =================== Tablet ==================== */
-@media (min-width: 768px) and (max-width: 991.98px) {
+/* =================== tablets, portrait mode ==================== */
+@media (max-width: 768px) {
+  .menu-nav-bar .list-nav-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
 }
 
 /* =================== mobile ==================== */
-@media (max-width: 767.98px) {
-}
-@media (max-width: 440px) {
-  .addcart {
-    padding: 6px 12px; /* Giảm padding thêm nữa */
-    font-size: 10px; /* Giảm kích thước chữ hơn nữa */
-    min-width: 110px; /* Giảm chiều rộng tối thiểu xuống */
+
+@media (max-width: 576px) {
+  /* 1. Ẩn đi menu-nav-bar */
+  .menu-nav-bar {
+    display: none;
+  }
+  /* 2. Chỉnh lại vị trí logo và search */
+  .nav-bar {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .header__logo {
+    padding: 20px 0px;
+  }
+  .search-box {
+    padding-bottom: 5px;
+  }
+  .search-box .search-form {
+    width: 80vw;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .search-box .search-test {
+    height: 35px;
+  }
+  .search-box .search-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+  }
+  /* 3. đưa carousel ra full chiều rộng */
+  .set-carousel .container {
+    width: 100%;
+  }
+  /* 4. */
+  .hot-selling-product .title {
+    text-align: center;
+    font-size: clamp(
+      8px,
+      16px
+    ) !important; /* Tối thiểu là 16px, tối đa là 32px */
+  }
+  /* 5. */
+  /* .list-hot-product {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  } */
+  /* 13. Sản phẩm */
+  .product {
+    min-width: 47%;
+    height: auto;
+    overflow: hidden;
+  }
+  body {
+    min-width: 200px;
   }
 }
