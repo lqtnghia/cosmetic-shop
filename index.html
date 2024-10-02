@@ -118,9 +118,32 @@
         <section class="nav-bar">
           <!-- logo -->
           <div class="logo header__logo">
-            <a href="#!">
+            <!-- menu-mobile -->
+            <svg
+              class="menu-mobile-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+            >
+              <path
+                d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+              />
+            </svg>
+            <a href="#!" class="logo__mobile">
               <img src="./Favicon/logoshop.webp" class="img__logo" />
             </a>
+            <!-- Responsive mobile -->
+            <!-- cart mobile -->
+            <div class="cart--mobile">
+              <svg
+                class="store--mobile"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 576 512"
+              >
+                <path
+                  d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
+                />
+              </svg>
+            </div>
           </div>
           <!-- search -->
           <div class="search-box">
@@ -160,81 +183,6 @@
             </ul>
           </div>
         </section>
-
-        <!-- Tablet/ mobile header -->
-        <!-- <div class="mobile-header"> -->
-        <!-- Tablet/ mobile menu -->
-        <!-- <input
-            type="checkbox"
-            name="menu-checkbox"
-            id="menu-checkbox"
-            class="menu-checkbox"
-            hidden
-          />
-          <label for="menu-checkbox">
-            <svg
-              class="menu-header__icon"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 448 512"
-            >
-              <path
-                fill="currentColor"
-                d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
-              />
-            </svg>
-          </label> -->
-        <!-- cart mobile -->
-        <!-- <div class="cart--mobile">
-            <a class="store--mobile"><i class="fa-solid fa-store"></i></a>
-          </div> -->
-        <!-- Overlay -->
-        <!-- <label for="menu-checkbox" class="menu-overlay"></label> -->
-        <!-- menu content -->
-        <!-- <div class="menu-drawer"> -->
-        <!-- menu top -->
-        <!-- <div class="menu-drawer__top"> -->
-        <!-- logo -->
-        <!-- <a href="#!">
-                <img src="./Favicon/logoshop.webp" class="img__logo--mobile" />
-              </a> -->
-        <!-- icon close menu -->
-        <!-- <label for="menu-checkbox">
-                <svg
-                  class="close-menu"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z"
-                  />
-                </svg>
-              </label>
-            </div> -->
-        <!-- nav mobile -->
-        <!-- <ul id="navbar__list--mobile" class="navbar__list">
-              <li><a href="#!" class="navbar__link"> Trang chủ</a></li>
-              <li>
-                <a href="#!" class="navbar__link"> Thương hiệu</a>
-              </li>
-              <li><a href="#!" class="navbar__link"> Sản phẩm</a></li>
-              <li><a href="#!" class="navbar__link"> Giới thiệu</a></li>
-            </ul> -->
-        <!-- login mobile -->
-        <!-- <div class="login--mobile">
-              <a class="login" href="http://127.0.0.1:5501/login.html">
-                Đăng nhập</a
-              >
-            </div> -->
-        <!-- sử dụng js để copy navbar -->
-        <!-- <script>
-              const navPc = document.querySelector("#navbar__list--pc");
-              const navMobile = document.querySelector("#navbar__list--mobile");
-              // Sao chép
-              navMobile.innerHTML = navPc.innerHTML;
-            </script>
-          </div>
-        </div> -->
       </header>
 
       <div class="set-carousel" style="padding-top: 140px">
