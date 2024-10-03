@@ -1,0 +1,30 @@
+/* ------------Sale product------------ */
+.main-sale {
+  position: relative;
+}
+.sale .container {
+  min-height: auto;
+  border-radius: 20px;
+  background-color: var(--key-primary-color);
+}
+.sale .header-sale {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  padding-top: 20px;
+}
+.sale .header-sale img {
+  width: 30vw;
+}
+.sale .list-sale-product {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+  padding: 20px;
+}
+.sale .product {
+  /* width: 220px; */
+  background-color: white;
+  border-radius: 20px;
+}

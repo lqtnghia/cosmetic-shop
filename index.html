@@ -90,6 +90,8 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/style-cart.css" />
     <link rel="stylesheet" href="./css/style-footer.css" />
+    <link rel="stylesheet" href="./css/style-product.css" />
+    <link rel="stylesheet" href="./css/style-sale.css" />
 
     <title>Cometic Shop</title>
     <!-- Bootstrap -->
@@ -166,7 +168,7 @@
               </a>
             </div>
             <div class="store">
-              <a><i class="fa-solid fa-store"></i> Giỏ hàng</a>
+              <a><i class="fa-solid fa-cart-shopping"></i> Giỏ hàng</a>
             </div>
           </div>
         </section>
@@ -185,6 +187,7 @@
         </section>
       </header>
 
+      <!-- Carousel -->
       <div class="set-carousel" style="padding-top: 140px">
         <div class="container">
           <div class="column1">
@@ -280,10 +283,17 @@
         </div>
       </div>
 
+      <!-- Hot product -->
       <div class="hot-selling-product">
         <div class="container">
           <div class="title">TOP SẢN PHẨM BÁN CHẠY</div>
           <div class="menu-hot-product">
+            <button class="carousel-button prev">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-button next">
+              <i class="fas fa-chevron-right"></i>
+            </button>
             <div class="list-hot-product">
               <!-- <div class="product">
                 <a href="">
@@ -314,14 +324,6 @@
               </div> -->
             </div>
           </div>
-          <div class="carousel-buttons">
-            <button class="carousel-button prev">
-              <i class="fas fa-chevron-left"></i>
-            </button>
-            <button class="carousel-button next">
-              <i class="fas fa-chevron-right"></i>
-            </button>
-          </div>
 
           <div class="show-all">
             <button
@@ -346,15 +348,15 @@
               </button>
             </div>
           </div>
-          <div class="list-sale-product"></div>
-        </div>
-        <div class="carousel-buttons">
-          <button class="carousel-button prevSale">
-            <i class="fas fa-chevron-left"></i>
-          </button>
-          <button class="carousel-button nextSale">
-            <i class="fas fa-chevron-right"></i>
-          </button>
+          <div class="main-sale">
+            <button class="carousel-button prevSale">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-button nextSale">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+            <div class="list-sale-product"></div>
+          </div>
         </div>
       </div>
 
@@ -484,8 +486,6 @@
     </div>
     <!-- Bootstrap JS (Local) -->
     <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
-    <!-- CountDownTimer -->
-    <!-- <script src="countDownTimer.js"></script> -->
     <!-- Carousel-list-product -->
     <script src="./js/carousel-list-product.js"></script>
     <!-- addProduct-cart -->

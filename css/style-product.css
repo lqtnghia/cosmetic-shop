@@ -1,0 +1,105 @@
+/* ------------------Đây là css cho product ------------------ */
+
+.product {
+  width: calc(100% / 5); /* Điều chỉnh chiều rộng của sản phẩm */
+  flex-shrink: 0; /* Ngăn không cho sản phẩm bị co lại */
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.product a {
+  text-decoration: none;
+  color: black;
+}
+.product .product-count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .product:hover {
+  transform: translateY(-5px);
+} */
+.detail-product span {
+  font-size: 10px;
+  line-clamp: 2;
+  display: -webkit-box; /* Sử dụng hộp linh hoạt */
+  -webkit-line-clamp: 2; /* Giới hạn hiển thị tối đa 2 dòng */
+  -webkit-box-orient: vertical; /* Hộp dọc */
+  overflow: hidden; /* Ẩn phần nội dung thừa */
+  text-overflow: ellipsis; /* Hiển thị dấu ba chấm khi nội dung vượt quá 2 dòng */
+  height: 32px; /* Chiều cao cố định của 2 dòng, điều chỉnh theo kích thước font */
+  line-height: 16px; /* Điều chỉnh khoảng cách giữa các dòng */
+}
+.detail-product h6 {
+  text-align: center;
+  cursor: pointer;
+}
+.detail-product h6:hover {
+  text-decoration: underline;
+}
+
+.price {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  text-align: center;
+  font-weight: bold;
+}
+.price span {
+  white-space: nowrap;
+  line-height: 40px;
+  font-size: 15px;
+}
+.price sup {
+  font-size: 70%;
+  vertical-align: baseline;
+  color: #e65c00;
+}
+/* .product button {
+  margin-left: 19%;
+} */
+.addcart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  font-size: clamp(6px, 2vw, 16px);
+  padding: 5px 10px;
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.addcart:hover {
+  background-color: #ec8e4f; /* Thay đổi màu khi hover */
+}
+.star-rating {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+.star-rating li {
+  margin: 0 5px;
+}
+.star-rating a {
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(0, 0, 0); /* Màu sao mờ mặc định */
+}
+.show-all {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+.show-all button {
+  cursor: pointer;
+  font-size: 15px;
+  padding: 5px 20px;
+  border-radius: 20px;
+}
