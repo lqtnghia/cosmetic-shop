@@ -289,3 +289,10 @@ ul.list-menu-footer {
   text-decoration: none;
   color: black;
 }
+.invalid input {
+  border-color: red; /* Đổi màu viền của input thành đỏ */
+}
+
+.invalid .form-message {
+  color: red; /* Đổi màu chữ của thông báo lỗi thành đỏ */
+}

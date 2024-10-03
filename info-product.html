@@ -6,88 +6,104 @@
     <link
       rel="apple-touch-icon"
       sizes="57x57"
-      href="/Favicon/apple-icon-57x57.png"
+      href="./assets/Favicon/apple-icon-57x57.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="60x60"
-      href="/Favicon/apple-icon-60x60.png"
+      href="./assets/Favicon/apple-icon-60x60.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="72x72"
-      href="/Favicon/apple-icon-72x72.png"
+      href="./assets/Favicon/apple-icon-72x72.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="76x76"
-      href="/Favicon/apple-icon-76x76.png"
+      href="./assets/Favicon/apple-icon-76x76.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="114x114"
-      href="/Favicon/apple-icon-114x114.png"
+      href="./assets/Favicon/apple-icon-114x114.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="120x120"
-      href="/Favicon/apple-icon-120x120.png"
+      href="./assets/Favicon/apple-icon-120x120.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="144x144"
-      href="/Favicon/Favicon/apple-icon-144x144.png"
+      href="./assets/Favicon/Favicon/apple-icon-144x144.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="152x152"
-      href="/Favicon/apple-icon-152x152.png"
+      href="./assets/Favicon/apple-icon-152x152.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="/Favicon/apple-icon-180x180.png"
+      href="./assets/Favicon/apple-icon-180x180.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="192x192"
-      href="/Favicon/android-icon-192x192.png"
+      href="./assets/Favicon/android-icon-192x192.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="/Favicon/favicon-32x32.png"
+      href="./assets/Favicon/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="96x96"
-      href="/Favicon/favicon-96x96.png"
+      href="./assets/Favicon/favicon-96x96.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="/Favicon/favicon-16x16.png"
+      href="./assets/Favicon/favicon-16x16.png"
     />
-    <link rel="manifest" href="/Favicon/manifest.json" />
+    <link rel="manifest" href="./assets/Favicon/manifest.json" />
     <meta name="msapplication-TileColor" content="#ffffff" />
-    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="style-info-product.css" />
-    <link rel="stylesheet" href="style-footer.css" />
-
+    <meta
+      name="msapplication-TileImage"
+      content="./assets/Favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
     <!-- Font-awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
-    <title>Thông Tin Sản Phẩm</title>
+    <!-- Bootstrap CSS (Local) -->
+    <link href="bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- file css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style-cart.css" />
+    <link rel="stylesheet" href="./css/style-footer.css" />
+    <link rel="stylesheet" href="./css/style-info-product.css" />
+
+    <title>Cometic Shop</title>
+    <!-- Bootstrap -->
+    <link href="path-to-bootstrap.css" rel="stylesheet" />
+    <link href="your-custom-stylesheet.css" rel="stylesheet" />
+    <!-- responsive -->
+    <link rel="stylesheet" href="./css/responsive.css" />
   </head>
   <body>
     <div class="cometic-shop">
+      <!-- Header -->
       <header>
+        <!-- Header 1 -->
         <section class="notify">
           <div class="bg-gradient">
             <div class="menu-content">
@@ -99,12 +115,38 @@
             </div>
           </div>
         </section>
+        <!-- Header 2 -->
         <section class="nav-bar">
-          <div class="logo">
-            <a>
-              <img src="./Favicon/logoshop.webp" />
+          <!-- logo -->
+          <div class="logo header__logo">
+            <!-- menu-mobile -->
+            <svg
+              class="menu-mobile-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+            >
+              <path
+                d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+              />
+            </svg>
+            <a href="#!" class="logo__mobile">
+              <img src="../assets/Favicon/logoshop.webp" class="img__logo" />
             </a>
+            <!-- Responsive mobile -->
+            <!-- cart mobile -->
+            <div class="cart--mobile">
+              <svg
+                class="store--mobile"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 576 512"
+              >
+                <path
+                  d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
+                />
+              </svg>
+            </div>
           </div>
+          <!-- search -->
           <div class="search-box">
             <form class="search-form">
               <input
@@ -117,277 +159,103 @@
               </button>
             </form>
           </div>
-          <div class="infor">
-            <div class="infor-shop">
-              <a class="facebook" href="/"
-                ><i class="fa-brands fa-facebook"></i> Facebook
-              </a>
-              <a class="phone" href="/"
-                ><i class="fa-solid fa-phone"></i>0796572799
-              </a>
-              <a class="support" href="/"
-                ><i class="fa-solid fa-comments"></i> Trung tâm hỗ trợ
-              </a>
-            </div>
-            <div class="infor-client">
-              <a class="login" href="/"
+          <!-- login-cart -->
+          <div class="login-store">
+            <div class="login">
+              <a href="http://127.0.0.1:5501/login.html"
                 ><i class="fa-solid fa-user"></i> Đăng nhập
               </a>
-              <a class="store" href="/"
-                ><i class="fa-solid fa-store"></i> Giỏ hàng</a
-              >
+            </div>
+            <div class="store">
+              <a><i class="fa-solid fa-cart-shopping"></i> Giỏ hàng</a>
             </div>
           </div>
         </section>
+        <!-- Header 3 -->
         <section class="menu-nav-bar">
-          <ul class="list-menu-nav-bar">
-            <li>
-              Thương hiệu
-              <div class="sub-menu">
-                <div class="text-list-menu">
-                  <ul>
-                    <li>Ohui</li>
-                    <li>Freshian</li>
-                    <li>Klavuu</li>
-                    <li>Cocoon</li>
-                  </ul>
-                </div>
-                <div class="text-list-menu">
-                  <a class="img-sub-menu">
-                    <img src="./img/imgThuonghieu/1.webp" />
-                  </a>
-                </div>
-                <div class="text-list-menu">
-                  <a class="img-sub-menu">
-                    <img src="./img/imgThuonghieu/2.webp" />
-                  </a>
-                </div>
-                <div class="text-list-menu">
-                  <a class="img-sub-menu">
-                    <img src="./img/imgThuonghieu/3.webp" />
-                  </a>
-                </div>
-              </div>
-            </li>
-            <li>Sản phẩm mới</li>
-            <li>Sản phẩm hot</li>
-            <li>
-              Chăm sóc da
-              <div class="sub-menu">
-                <div class="menu-4 text-list-menu">
-                  <h4>DƯỠNG DA</h4>
-                  <ul>
-                    <li>Kem Dưỡng Da</li>
-                    <li>Serum</li>
-                    <li>Toner</li>
-                    <li>Sữa Dưỡng</li>
-                    <li>Bộ Dưỡng Chăm Sóc Da</li>
-                  </ul>
-                </div>
-                <div class="menu-4 text-list-menu">
-                  <h4>LÀM SẠCH</h4>
-                  <ul>
-                    <li>Sửa Rửa Mặt</li>
-                    <li>Tẩy Trang</li>
-                    <li>Tẩy Tế Bào Chết</li>
-                  </ul>
-                </div>
-                <div class="menu-4 text-list-menu">
-                  <h4>MẶT NẠ</h4>
-                  <ul>
-                    <li>Mặt Nạ Giấy</li>
-                    <li>Mặt Nạ Mắt & Môi</li>
-                    <li>Mặt Nạ Ngủ</li>
-                  </ul>
-                </div>
-                <div class="text-list-menu">
-                  <a class="img-sub-menu">
-                    <img
-                      src="./img/imgChamSocDa/466d70db-6022-4fa1-aa04-dcfdc284968e.webp"
-                    />
-                  </a>
-                </div>
-              </div>
-            </li>
-            <li>Chăm sóc cơ thể</li>
-            <li>Giảm giá</li>
-          </ul>
+          <!-- menu-nav-bar 1 -->
+          <div>
+            <ul class="list-nav-bar">
+              <li>Home</li>
+              <li>About</li>
+              <li>Specials</li>
+              <li>New</li>
+              <li>Contact</li>
+            </ul>
+          </div>
         </section>
       </header>
-      <div class="product" style="padding-top: 140px">
-        <div class="img-product"></div>
-        <div class="detail-product"></div>
-      </div>
-      <footer>
+      <div class="login-bar" style="padding-top: 140px">
         <div class="container">
-          <div class="list-footer">
-            <div>
-              <div class="footer-widget">
-                <div class="logo">
-                  <a href="">
-                    <img src="./Favicon/logoshop.webp" />
-                  </a>
-                </div>
-                <div class="footer-content">
-                  <ul class="list-menu-footer">
-                    <li>
-                      <a href="" title="<b>HỘ KINH DOANH CENTRAL CREW</b>"
-                        ><b>HỘ KINH DOANH CENTRAL CREW</b></a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href=""
-                        title="<b>- Địa điểm kinh doanh:</b> SỐ 41A Trần Quang Khải, phường Phú Hôi, thành phố Huế, tỉnh Thừa Thiên Huế"
-                        ><b>- Địa điểm kinh doanh:</b> SỐ 41A Trần Quang Khải,
-                        phường Phú Hôi, thành phố Huế, tỉnh Thừa Thiên Huế.</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href=""
-                        title="<b>- Giấy chứng nhận đăng ký hộ kinh doanh </b> số: N26T02N2004"
-                        ><b>- Giấy chứng nhận đăng ký hộ kinh doanh </b> số:
-                        N26T02N2004</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href=""
-                        title="<b>- Đăng ký lần đầu: </b>ngày 26 tháng 2 năm 2004"
-                        ><b>- Đăng ký lần đầu: </b>ngày 26 tháng 2 năm 2004</a
-                      >
-                    </li>
-                    <li>
-                      <a href="" title="<b>- MST cá nhân số:</b> 26022004-262"
-                        ><b>- MST cá nhân số:</b> 26022004-262</a
-                      >
-                    </li>
-                    <li>
-                      <a href="" title="<b>+ Ngày cấp:</b> 20/12/2001"
-                        ><b>+ Ngày cấp:</b> 20/12/2001</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href=""
-                        title="<b>+ Nơi cấp:</b> Chi cục Thuế Tỉnh Thừa Thiên Huế"
-                        ><b>+ Nơi cấp:</b> Chi cục Thuế Tỉnh Thừa Thiên Huế</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href=""
-                        title="<b>- Email:</b> cskh.nghiasneakers@gmail.com"
-                        ><b>- Email:</b> cskh.centralcrews@gmail.com</a
-                      >
-                    </li>
-                    <li>
-                      <a href="" title="<b>- Điện thoại / Zalo</b> 0796572799"
-                        ><b>- Điện thoại / Zalo</b> 0796572799</a
-                      >
-                    </li>
-                    <li>
-                      <a href="" title="<b>- Thời gian hoạt động:</b> 9h - 22h"
-                        ><b>- Thời gian hoạt động:</b> 9h - 22h</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="footer-widget">
-                <h4 class="footer-title">
-                  <span>Hỗ trợ</span>
-                </h4>
-                <div class="footer-content">
-                  <ul class="list-menu-footer">
-                    <li><a href="" title="Tài khoản">Tài khoản</a></li>
-                    <li>
-                      <a href="" title="Cách chọn size giày"
-                        >Cách chọn sản phẩm phù hợp với làn da</a
-                      >
-                    </li>
-                    <li>
-                      <a href="" title="Hướng dẫn mua hàng"
-                        >Hướng dẫn mua hàng
-                      </a>
-                    </li>
-                    <li>
-                      <a href="" title="Theo dõi đơn hàng">Theo dõi đơn hàng</a>
-                    </li>
-                    <li>
-                      <a href="" title="Tích điểm đổi quà">Tích điểm đổi quà</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="footer-widget">
-                <h4 class="footer-title">
-                  <span>Chính sách</span>
-                </h4>
-                <div class="footer-content">
-                  <ul class="list-menu-footer">
-                    <li>
-                      <a href="" title="Cam kết và bảo hành"
-                        >Cam kết và bảo hành</a
-                      >
-                    </li>
-                    <li>
-                      <a href="" title="Phương thức thanh toán"
-                        >Phương thức thanh toán</a
-                      >
-                    </li>
-                    <li>
-                      <a href="" title="Chính sách vận chuyển"
-                        >Chính sách vận chuyển</a
-                      >
-                    </li>
-                    <li>
-                      <a href="" title="Chính sách bảo mật"
-                        >Chính sách bảo mật</a
-                      >
-                    </li>
-                    <li><a href="" title="Thông tin">Thông tin</a></li>
-                    <li>
-                      <a href="" title="Chính sách bảo mật"
-                        >Chính sách bảo mật</a
-                      >
-                    </li>
-                    <li>
-                      <a href="" title="Chính sách đổi trả"
-                        >Chính sách đổi trả</a
-                      >
-                    </li>
-                    <li>
-                      <a href="" title="Chính sách kiểm hàng"
-                        >Chính sách kiểm hàng</a
-                      >
-                    </li>
-                    <li>
-                      <a href="" title="Quy định đổi trả và hoàn tiền"
-                        >Quy định đổi trả và hoàn tiền</a
-                      >
-                    </li>
-                    <li><a href="" title="Điều khoản">Điều khoản</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div>
-              <a href="">
-                <img src="./img/IMG_0909.jpeg" />
+          <ul>
+            <li>
+              <a href="http://127.0.0.1:5501/index.html">Trang chủ</a>
+              <span>&nbsp;/&nbsp;</span>
+            </li>
+            <li><a href="">Sản phẩm</a> <span>&nbsp;/&nbsp;</span></li>
+            <li class="login-bar-1">Thông tin</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="product">
+      <div class="img-product">
+        <img
+          src="./assets/img/img-hot-product/BEPLAIN/Mặt Nạ Đất Sét Beplain Từ Đậu Xanh Hỗ Trợ Thải Độc Da Giảm Mụn Đầu Đen Mung Bean Pore Clay Mask 120ml.webp"
+        />
+      </div>
+      <div class="detail-product">
+        <div class="head-detail">
+          <div class="info-product">
+            <h5>Beplain</h5>
+            <h6 class="descri-product">
+              Son Thỏi Bóng Peripera Heart Jam Glow Lip 1.4g
+            </h6>
+            <div class="price"><span>320.000</span><sup>đ</sup></div>
+            <div class="rating">
+              <a>
+                <ul class="star-rating 5-star">
+                  <a href="#"> </a>
+                  <li><a href="#"></a><a href="#">★</a></li>
+                  <li><a href="#">★</a></li>
+                  <li><a href="#">★</a></li>
+                  <li><a href="#">★</a></li>
+                  <li><a href="#">★</a></li>
+                </ul>
               </a>
             </div>
           </div>
         </div>
-      </footer>
+        <div class="foot-detail">
+          <div class="purchase-form">
+            <h5>Hình thức mua hàng</h5>
+            <div>
+              <input type="radio" />
+              Giao hàng
+            </div>
+            <div>
+              <input type="radio" />
+              Mua hàng và lấy hàng tại cửa hàng
+              <span
+                >Chọn cửa hàng <i class="fa-solid fa-chevron-down"></i
+              ></span>
+            </div>
+            <div class="payment">
+              <button class="minus">-</button>
+              <input type="number" value="1" min="1" />
+              <button class="plus">+</button>
+              <button class="addcart">Thêm vào giỏ hàng</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product" style="padding-top: 140px">
+        <div class="img-product"></div>
+        <div class="detail-product"></div>
+      </div>
     </div>
-    <script src="showInfoProduct.js"></script>
-    <script src="inputNumber.js"></script>
+    <script src="./js/showInfoProduct.js"></script>
+    <script src="./js/inputNumber.js"></script>
     <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
