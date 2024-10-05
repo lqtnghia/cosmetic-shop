@@ -133,6 +133,7 @@ listProductHot.forEach((product) => {
       <a href="info-product.html?id=${product.id}">
         <div class="img-product">
           <img src="${product.img}" />
+          <button class="show-now">Xem ngay</button>
         </div>
         <div class="detail-product">
           <h6>${product.brand}</h6>
