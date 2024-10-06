@@ -168,4 +168,14 @@
     min-height: 3px;
     font-size: clamp(10px, 2vw, 16px);
   }
+  /* 18. set chiều rộng carousel */
+  .set-carousel .container {
+    height: 200px;
+  }
+  .set-carousel .container img {
+    height: 200px;
+  }
+  .set-carousel .container .carousel-indicators {
+    bottom: -12px;
+  }
 }

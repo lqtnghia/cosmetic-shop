@@ -185,7 +185,7 @@
           </div>
         </section>
       </header>
-      <div class="login-bar" style="padding-top: 140px">
+      <div class="login-bar" style="padding-top: 150px">
         <div class="container">
           <ul>
             <li>
@@ -200,46 +200,30 @@
     </div>
     <div class="product">
       <div class="img-product">
-        <img
-          src="./assets/img/img-hot-product/BEPLAIN/Mặt Nạ Đất Sét Beplain Từ Đậu Xanh Hỗ Trợ Thải Độc Da Giảm Mụn Đầu Đen Mung Bean Pore Clay Mask 120ml.webp"
-        />
+        <!-- <img src="link_to_your_image_here" alt="Product Image" /> -->
       </div>
       <div class="detail-product">
-        <div class="head-detail">
-          <div class="info-product">
-            <h5>Beplain</h5>
-            <h6 class="descri-product">
-              Son Thỏi Bóng Peripera Heart Jam Glow Lip 1.4g
-            </h6>
-            <div class="price"><span>320.000</span><sup>đ</sup></div>
+        <!-- <div class="head-detail">
+          <div class="info-product-heading">
+            <h5>Tên thương hiệu</h5>
+            <h6 class="descri-product">Tên sản phẩm</h6>
+            <div class="price"><span>320,000</span><sup>đ</sup></div>
             <div class="rating">
-              <a>
-                <ul class="star-rating 5-star">
-                  <a href="#"> </a>
-                  <li><a href="#"></a><a href="#">★</a></li>
-                  <li><a href="#">★</a></li>
-                  <li><a href="#">★</a></li>
-                  <li><a href="#">★</a></li>
-                  <li><a href="#">★</a></li>
-                </ul>
-              </a>
+              <ul class="star-rating">
+                <li>★</li>
+                <li>★</li>
+                <li>★</li>
+                <li>★</li>
+                <li>★</li>
+              </ul>
             </div>
           </div>
-        </div>
-        <div class="foot-detail">
+        </div> -->
+        <!-- <div class="foot-detail">
           <div class="purchase-form">
             <h5>Hình thức mua hàng</h5>
-            <div>
-              <input type="radio" />
-              Giao hàng
-            </div>
-            <div>
-              <input type="radio" />
-              Mua hàng và lấy hàng tại cửa hàng
-              <span
-                >Chọn cửa hàng <i class="fa-solid fa-chevron-down"></i
-              ></span>
-            </div>
+            <div><input type="radio" name="purchase" /> Giao hàng</div>
+            <div><input type="radio" name="purchase" /> Mua tại cửa hàng</div>
             <div class="payment">
               <button class="minus">-</button>
               <input type="number" value="1" min="1" />
@@ -247,15 +231,80 @@
               <button class="addcart">Thêm vào giỏ hàng</button>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="product" style="padding-top: 140px">
-        <div class="img-product"></div>
-        <div class="detail-product"></div>
+        </div> -->
       </div>
     </div>
+
+    <section class="cart">
+      <i class="fa-solid fa-x"></i>
+      <h2>Cart</h2>
+      <form action="">
+        <table>
+          <thead>
+            <tr>
+              <th>Sản phẩm</th>
+              <th>Giá</th>
+              <th>SL</th>
+              <th>Chọn</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- <tr>
+                <td style="display: flex; align-items: center">
+                  <img
+                    style="width: 70px"
+                    src="img/img-hot-product/Mặt Nạ Đất Sét Beplain Từ Đậu Xanh Hỗ Trợ Thải Độc Da Giảm Mụn Đầu Đen Mung Bean Pore Clay Mask 120ml.webp"
+                  />Sáp
+                </td>
+                <td>
+                  <p>
+                    <span>345.678</span><sup>đ</sup>
+                  </p>
+                </td>
+                <td>
+                  <input
+                    style="width: 30px; outline: none"
+                    type="number"
+                    value="1"
+                    min="1"
+                  />
+                </td>
+                <td style="cursor: pointer">Xóa</td>
+              </tr>
+              <tr>
+                <td style="display: flex; align-items: center">
+                  <img
+                    style="width: 70px"
+                    src="img/img-hot-product/Son Thỏi Bóng Peripera Heart Jam Glow Lip 1.4g.webp"
+                  />Son
+                </td>
+                <td>
+                  <p>
+                    <span>345.678</span><sup>đ</sup>
+                  </p>
+                </td>
+                <td>
+                  <input
+                    style="width: 30px; outline: none"
+                    type="number"
+                    value="1"
+                    min="0"
+                  />
+                </td>
+                <td style="cursor: pointer">Xóa</td>
+              </tr> -->
+          </tbody>
+        </table>
+        <div style="text-align: right" class="price-total">
+          <p style="font-weight: bold">Tổng tiền: <span>0</span><sup>đ</sup></p>
+        </div>
+        <button>Thanh toán</button>
+      </form>
+    </section>
+
     <script src="./js/showInfoProduct.js"></script>
     <script src="./js/inputNumber.js"></script>
+    <script src="./js/cart.js"></script>
     <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
