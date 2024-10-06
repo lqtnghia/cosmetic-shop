@@ -8,6 +8,7 @@
   background-color: white;
   padding: 12px 20px;
   overflow-y: scroll;
+  z-index: 4;
 }
 
 .cart i {

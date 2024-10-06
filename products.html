@@ -10,15 +10,21 @@
     <!-- Bootstrap CSS (Local) -->
     <link href="bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet" />
     <!-- file css -->
-    <link rel="stylesheet" href="style-products.css" />
-    <link rel="stylesheet" href="style-cart.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style-products.css" />
+    <link rel="stylesheet" href="./css/style-cart.css" />
+    <!-- <link rel="stylesheet" href="./css/style-product.css" /> -->
     <!-- Bootstrap -->
-    <link href="path-to-bootstrap.css" rel="stylesheet" />
-    <link href="your-custom-stylesheet.css" rel="stylesheet" />
+    <!-- <link href="path-to-bootstrap.css" rel="stylesheet" />
+    <link href="your-custom-stylesheet.css" rel="stylesheet" /> -->
+    <!-- responsvie -->
+    <link rel="stylesheet" href="./css/responsive.css" />
     <title>Products</title>
   </head>
   <body>
+    <!-- Header -->
     <header>
+      <!-- Header 1 -->
       <section class="notify">
         <div class="bg-gradient">
           <div class="menu-content">
@@ -30,12 +36,38 @@
           </div>
         </div>
       </section>
+      <!-- Header 2 -->
       <section class="nav-bar">
-        <div class="logo">
-          <a>
-            <img src="./Favicon/logoshop.webp" />
+        <!-- logo -->
+        <div class="logo header__logo">
+          <!-- menu-mobile -->
+          <svg
+            class="menu-mobile-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+          >
+            <path
+              d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+            />
+          </svg>
+          <a href="#!" class="logo__mobile">
+            <img src="../assets/Favicon/logoshop.webp" class="img__logo" />
           </a>
+          <!-- Responsive mobile -->
+          <!-- cart mobile -->
+          <div class="cart--mobile">
+            <svg
+              class="store--mobile"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 576 512"
+            >
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
+              />
+            </svg>
+          </div>
         </div>
+        <!-- search -->
         <div class="search-box">
           <form class="search-form">
             <input
@@ -48,62 +80,30 @@
             </button>
           </form>
         </div>
-        <div class="infor">
-          <div class="infor-shop">
-            <a
-              class="facebook"
-              href="https://www.facebook.com/profile.php?id=100022369530407"
-              ><i class="fa-brands fa-facebook"></i> Facebook
-            </a>
-            <a class="phone" href="/"
-              ><i class="fa-solid fa-phone"></i>0796572799
-            </a>
-            <a class="support" href="/"
-              ><i class="fa-solid fa-comments"></i> Trung tâm hỗ trợ
-            </a>
-          </div>
-          <div class="infor-client">
-            <a class="login" href="http://127.0.0.1:5501/login.html"
+        <!-- login-cart -->
+        <div class="login-store">
+          <div class="login">
+            <a href="http://127.0.0.1:5501/login.html"
               ><i class="fa-solid fa-user"></i> Đăng nhập
             </a>
-            <a class="store"><i class="fa-solid fa-store"></i> Giỏ hàng</a>
+          </div>
+          <div class="store">
+            <a><i class="fa-solid fa-cart-shopping"></i> Giỏ hàng</a>
           </div>
         </div>
       </section>
+      <!-- Header 3 -->
       <section class="menu-nav-bar">
-        <ul class="list-menu-nav-bar">
-          <li>Trang chủ</li>
-          <li>
-            Thương hiệu
-            <div class="sub-menu">
-              <div class="text-list-menu">
-                <ul>
-                  <li>Ohui</li>
-                  <li>Freshian</li>
-                  <li>Klavuu</li>
-                  <li>Cocoon</li>
-                </ul>
-              </div>
-              <div class="text-list-menu">
-                <a class="img-sub-menu">
-                  <img src="./img/imgThuonghieu/1.webp" />
-                </a>
-              </div>
-              <div class="text-list-menu">
-                <a class="img-sub-menu">
-                  <img src="./img/imgThuonghieu/2.webp" />
-                </a>
-              </div>
-              <div class="text-list-menu">
-                <a class="img-sub-menu">
-                  <img src="./img/imgThuonghieu/3.webp" />
-                </a>
-              </div>
-            </div>
-          </li>
-          <li>Sản phẩm</li>
-          <li>Giới thiệu</li>
-        </ul>
+        <!-- menu-nav-bar 1 -->
+        <div>
+          <ul class="list-nav-bar">
+            <li>Home</li>
+            <li>About</li>
+            <li>Specials</li>
+            <li>New</li>
+            <li>Contact</li>
+          </ul>
+        </div>
       </section>
     </header>
 
@@ -141,21 +141,21 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img
-                  src="img/imgCarousel/2.webp"
+                  src="./assets/img/imgCarousel/3.webp"
                   class="d-block w-100"
                   alt="Slide 1"
                 />
               </div>
               <div class="carousel-item">
                 <img
-                  src="img/imgCarousel/3.webp"
+                  src="./assets/img/imgCarousel/2.webp"
                   class="d-block w-100"
                   alt="Slide 2"
                 />
               </div>
               <div class="carousel-item">
                 <img
-                  src="img/imgCarousel/4.webp"
+                  src="./assets/img/imgCarousel/4.webp"
                   class="d-block w-100"
                   alt="Slide 3"
                 />
@@ -190,12 +190,12 @@
         <div class="column2">
           <div class="row1">
             <a>
-              <img src="/img/imgCarousel/5.webp" />
+              <img src="./assets/img/imgCarousel/5.webp" />
             </a>
           </div>
           <div class="row2">
             <a>
-              <img src="/img/imgCarousel/6.webp" />
+              <img src="./assets/img/imgCarousel/6.webp" />
             </a>
           </div>
         </div>
@@ -205,83 +205,66 @@
     <main style="padding-top: 20px">
       <div class="container">
         <div class="main-content">
-          <div class="filter-content">
-            <div class="price">
-              <p class="title">Lọc giá</p>
-              <div class="sort-price">
-                <input type="text" placeholder="Giá tối thiểu" />
-                <input type="text" placeholder="Giá tối đa" />
-              </div>
-              <button class="btn">Áp dụng</button>
+          <div class="filter-section">
+            <div class="search">
+              <input
+                type="text"
+                class="filter-search"
+                placeholder="Search..."
+              />
+              <i class="fa-solid fa-magnifying-glass"></i>
             </div>
-            <div class="brand">
-              <p class="title">Thương hiệu</p>
-              <div class="list-branch">
-                <ul class="list-name">
-                  <li>
-                    <div class="name-branch">
-                      <i class="fa-solid fa-caret-right"></i> BANILA CP
-                    </div>
-                  </li>
-                  <li>
-                    <div class="name-branch">
-                      <i class="fa-solid fa-caret-right"></i> CLIO
-                    </div>
-                  </li>
-                  <li>
-                    <div class="name-branch">
-                      <i class="fa-solid fa-caret-right"></i> SUM
-                    </div>
-                  </li>
-                  <li>
-                    <div class="name-branch">
-                      <i class="fa-solid fa-caret-right"></i> SU:M37
-                    </div>
-                  </li>
-                  <li>
-                    <div class="name-branch">
-                      <i class="fa-solid fa-caret-right"></i> WHOO
-                    </div>
-                  </li>
-                </ul>
-              </div>
+            <div class="filter-category">
+              <h3>Category</h3>
+              <label><input type="checkbox" />Products</label>
             </div>
-            <div class="category">
-              <p class="title">Danh mục</p>
-              <div class="list-category">
-                <ul class="list-name">
-                  <li>
-                    <div class="name-branch">
-                      <i class="fa-solid fa-caret-right"></i> Kem chống nắng
-                    </div>
-                  </li>
-                  <li>
-                    <div class="name-branch">
-                      <i class="fa-solid fa-caret-right"></i> Sửa rửa mặt
-                    </div>
-                  </li>
-                  <li>
-                    <div class="name-branch">
-                      <i class="fa-solid fa-caret-right"></i> Son thỏi
-                    </div>
-                  </li>
-                </ul>
-              </div>
+            <div class="filter-branch">
+              <h3>Branch</h3>
+              <label><input type="checkbox" />AHC</label>
+              <label><input type="checkbox" />BANILA CO</label>
+              <label><input type="checkbox" />BEPLAIN</label>
+              <label><input type="checkbox" />CLUB CLIO</label>
+              <label><input type="checkbox" />DEAR DAHLIA</label>
+            </div>
+            <div class="filter-type">
+              <h3>Product type</h3>
+              <label><input type="checkbox" />Mặt nạ</label>
+              <label><input type="checkbox" />Son</label>
+              <label><input type="checkbox" />Kem nền</label>
+              <label><input type="checkbox" />Sáp tẩy trang</label>
+              <label><input type="checkbox" />Sửa rửa mặt</label>
+            </div>
+            <div class="filter-capacity">
+              <h3>Capacity</h3>
+              <label><input type="checkbox" />30ml</label>
+              <label><input type="checkbox" />50ml</label>
+              <label><input type="checkbox" />100ml</label>
+              <label><input type="checkbox" />120ml</label>
+              <label><input type="checkbox" />150ml</label>
+            </div>
+            <div class="filter-price">
+              <h3>Price</h3>
+              <input type="range" min="1" max="15" value="1" />
+              <span>$1.00 - %15.00</span>
             </div>
           </div>
           <div class="show-products">
-            <div class="menu-sort">
-              <ul class="list-sort">
-                <li><span>Sắp xếp: </span></li>
-                <li><label>A -> Z</label></li>
-                <li><label>Z -> A</label></li>
-                <li><label for="">Giá tăng dần</label></li>
-                <li><label for="">Giá giảm dần</label></li>
-                <li><label for="">Mới nhất</label></li>
-                <li><label for="">Cũ nhất</label></li>
-              </ul>
+            <div class="filter-info">
+              <div class="quantity">7 products</div>
+              <div class="sort-container">
+                <span>Lọc theo</span>
+                <div class="dropdown">
+                  <button class="dropbtn">
+                    Tất cả <i class="arrow down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="#" class="increase">Giá tăng dần</a>
+                    <a href="#" class="decrease">Giá giảm dần</a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="list-hot-product"></div>
+            <div class="list-all-product"></div>
           </div>
         </div>
       </div>
@@ -355,7 +338,8 @@
     <!-- Bootstrap JS (Local) -->
     <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
     <!-- addProduct-cart -->
-    <script src="addProduct-cart.js"></script>
-    <script src="cart.js"></script>
+    <script src="./js/addProduct-cart.js"></script>
+    <script src="./js/addAllProducts.js"></script>
+    <script src="./js/cart.js"></script>
   </body>
 </html>

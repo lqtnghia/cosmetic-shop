@@ -9,6 +9,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+.product .feature {
+  position: absolute;
+  z-index: 1;
+  background-color: var(--key-primary-color);
+  border-radius: 5px;
+  color: white;
+  padding: 5px 10px;
+  font-size: 16px;
+  top: 10px;
 }
 .product a {
   text-decoration: none;
@@ -42,9 +53,10 @@
 }
 
 .price {
-  /* display: flex;
+  display: flex;
   justify-content: center;
-  align-items: center; */
+  align-items: center;
+  gap: 20px;
   text-align: center;
   font-weight: bold;
 }
@@ -117,6 +129,7 @@
 
 .product .img-product:hover img {
   transform: scale(1.1); /* Phóng to hình ảnh lên 10% khi hover */
+  /* border-radius: 10px; */
 }
 
 /* CSS cho nút "Xem ngay" */
