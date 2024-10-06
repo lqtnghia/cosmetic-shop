@@ -34,7 +34,6 @@
   transform: translateY(-5px);
 } */
 .detail-product span {
-  font-size: 10px;
   line-clamp: 2;
   display: -webkit-box; /* Sử dụng hộp linh hoạt */
   -webkit-line-clamp: 2; /* Giới hạn hiển thị tối đa 2 dòng */
@@ -60,7 +59,8 @@
   text-align: center;
   font-weight: bold;
 }
-.price span {
+.list-hot-product .price span,
+.list-sale-product .price span {
   white-space: nowrap;
   line-height: 40px;
   font-size: 15px;
