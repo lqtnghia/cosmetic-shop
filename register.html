@@ -18,8 +18,8 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/style-register.css" />
     <title>Cometic Shop</title>
-    <link href="path-to-bootstrap.css" rel="stylesheet" />
-    <link href="your-custom-stylesheet.css" rel="stylesheet" />
+    <!-- <link href="path-to-bootstrap.css" rel="stylesheet" />
+    <link href="your-custom-stylesheet.css" rel="stylesheet" /> -->
   </head>
   <body>
     <div class="cometic-shop">
@@ -144,6 +144,7 @@
                     type="text"
                     class="form-control"
                     id="first-name"
+                    name="first-name"
                     placeholder="Họ"
                   />
                   <span class="form-message"></span>
@@ -156,6 +157,7 @@
                     type="text"
                     class="form-control"
                     id="last-name"
+                    name="last-name"
                     placeholder="Tên"
                   />
                   <span class="form-message"></span>
@@ -168,6 +170,7 @@
                     type="text"
                     class="form-control"
                     id="phone-number"
+                    name="phone-number"
                     placeholder="Số điện thoại"
                   />
                   <span class="form-message"></span>
@@ -180,6 +183,7 @@
                     type="text"
                     class="form-control"
                     id="email"
+                    name="email"
                     placeholder="Email"
                   />
                   <span class="form-message"></span>
@@ -192,6 +196,7 @@
                     type="password"
                     class="form-control"
                     id="password"
+                    name="password"
                     placeholder="Password"
                   />
                   <span class="form-message"></span>
@@ -204,6 +209,7 @@
                     type="password"
                     class="form-control"
                     id="re-enter-password"
+                    name="re-enter-password"
                     placeholder="Password"
                   />
                   <span class="form-message"></span>
@@ -243,6 +249,7 @@
     <script>
       Validator({
         form: "#form-1",
+        formGroupSelector: ".form-group",
         rules: [
           Validator.minLenngth("#password", 8),
           Validator.isEmail("#email"),
@@ -250,7 +257,18 @@
           Validator.isRequired("#last-name"),
           Validator.isRequired("#phone-number"),
           Validator.isRequired("#re-enter-password"),
+          Validator.isConfirmed(
+            "#re-enter-password",
+            function () {
+              return document.querySelector("#form-1 #password").value;
+            },
+            "Mật khẩu nhập lại không chính xác."
+          ),
         ],
+        onSubmit: function (data) {
+          // call api
+          console.log(data);
+        },
       });
     </script>
   </body>
