@@ -15,10 +15,13 @@
   cursor: pointer;
 }
 
-.cart button {
+.cart a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
   margin-top: 12px;
   height: 30px;
-  padding: 0 20px;
+  padding: 10px 20px;
   cursor: pointer;
   border: none;
   border-radius: 5px;
