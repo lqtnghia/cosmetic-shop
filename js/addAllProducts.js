@@ -29,7 +29,9 @@ products.forEach((product) => {
               </ul>
             </div>
           </div>
-          <button class="addcart">Thêm vào giỏ hàng</button>
+          <button class="addcart" data-id="${
+            product.id
+          }">Thêm vào giỏ hàng</button>
         </a>
       </div>
     `;
@@ -56,7 +58,9 @@ products.forEach((product) => {
                 </ul>
               </div>
             </div>
-            <button class="addcart">Thêm vào giỏ hàng</button>
+            <button class="addcart" data-id="${
+              product.id
+            }">Thêm vào giỏ hàng</button>
           </a>
         </div>
       `;
