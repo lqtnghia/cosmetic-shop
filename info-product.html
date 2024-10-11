@@ -129,7 +129,7 @@
                 d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
               />
             </svg>
-            <a href="#!" class="logo__mobile">
+            <a href="http://127.0.0.1:5501/index.html" class="logo__mobile">
               <img src="../assets/Favicon/logoshop.webp" class="img__logo" />
             </a>
             <!-- Responsive mobile -->
@@ -168,6 +168,7 @@
             </div>
             <div class="store">
               <a><i class="fa-solid fa-cart-shopping"></i> Giỏ hàng</a>
+              <span class="cart-count-badge">0</span>
             </div>
           </div>
         </section>
@@ -235,76 +236,107 @@
       </div>
     </div>
 
-    <section class="cart">
-      <i class="fa-solid fa-x"></i>
-      <h2>Cart</h2>
-      <form action="">
-        <table>
-          <thead>
-            <tr>
-              <th>Sản phẩm</th>
-              <th>Giá</th>
-              <th>SL</th>
-              <th>Chọn</th>
-            </tr>
-          </thead>
-          <tbody>
-            <!-- <tr>
-                <td style="display: flex; align-items: center">
-                  <img
-                    style="width: 70px"
-                    src="img/img-hot-product/Mặt Nạ Đất Sét Beplain Từ Đậu Xanh Hỗ Trợ Thải Độc Da Giảm Mụn Đầu Đen Mung Bean Pore Clay Mask 120ml.webp"
-                  />Sáp
-                </td>
-                <td>
-                  <p>
-                    <span>345.678</span><sup>đ</sup>
-                  </p>
-                </td>
-                <td>
-                  <input
-                    style="width: 30px; outline: none"
-                    type="number"
-                    value="1"
-                    min="1"
-                  />
-                </td>
-                <td style="cursor: pointer">Xóa</td>
-              </tr>
-              <tr>
-                <td style="display: flex; align-items: center">
-                  <img
-                    style="width: 70px"
-                    src="img/img-hot-product/Son Thỏi Bóng Peripera Heart Jam Glow Lip 1.4g.webp"
-                  />Son
-                </td>
-                <td>
-                  <p>
-                    <span>345.678</span><sup>đ</sup>
-                  </p>
-                </td>
-                <td>
-                  <input
-                    style="width: 30px; outline: none"
-                    type="number"
-                    value="1"
-                    min="0"
-                  />
-                </td>
-                <td style="cursor: pointer">Xóa</td>
-              </tr> -->
-          </tbody>
-        </table>
-        <div style="text-align: right" class="price-total">
-          <p style="font-weight: bold">Tổng tiền: <span>0</span><sup>đ</sup></p>
+    <footer>
+      <div class="parallax">
+        <svg
+          class="waves"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28"
+          preserveAspectRatio="none"
+          shape-rendering="auto"
+        >
+          <defs>
+            <!-- Định nghĩa hình dạng sóng -->
+            <path
+              id="gentle-wave"
+              d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+            />
+          </defs>
+          <g class="parallax-waves">
+            <!-- Lớp sóng thứ nhất -->
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="0"
+              fill="rgba(244, 119, 140, 0.7)"
+            />
+            <!-- Lớp sóng thứ hai, di chuyển khác nhau -->
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="3"
+              fill="rgba(244, 119, 140, 0.5)"
+            />
+            <!-- Lớp sóng thứ ba -->
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="5"
+              fill="rgba(244, 119, 140, 0.3)"
+            />
+            <!-- Lớp sóng thứ tư -->
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="7"
+              fill="rgba(244, 119, 140, 1)"
+            />
+          </g>
+        </svg>
+      </div>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>VỀ CHÚNG TÔI</h3>
+          <ul>
+            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="#">Khách hàng</a></li>
+            <li><a href="#">Đối tác</a></li>
+            <li><a href="#">Hệ thống quản lý</a></li>
+            <li><a href="#">Tuyển dụng</a></li>
+            <li><a href="#">Liên hệ</a></li>
+          </ul>
         </div>
-        <button>Thanh toán</button>
-      </form>
-    </section>
+
+        <div class="footer-section">
+          <h3>HỖ TRỢ KHÁCH HÀNG</h3>
+          <ul>
+            <li><a href="#">Hướng dẫn đặt hàng</a></li>
+            <li><a href="#">Hướng dẫn thanh toán</a></li>
+            <li><a href="#">Câu hỏi thường gặp</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>LIÊN HỆ</h3>
+          <p>📞 0796572799</p>
+          <p>Cơ sở 1: 123A, Võ Văn Ngân, Linh Chiểu, Huế</p>
+          <p>Cơ sở 2: 123A, Võ Văn Ngân, Linh Chiểu, Quảng Bình</p>
+          <p>Cơ sở 3: 123A, Võ Văn Ngân, Linh Chiểu, Quảng Trị</p>
+          <p>Cơ sở 4: 123A, Võ Văn Ngân, Linh Chiểu, Quảng Nam</p>
+          <p>🟢 Free Ship toàn quốc với đơn hàng từ 999.000 đồng</p>
+          <p>☎️ Hotline: 1900 6868</p>
+          <p>📞 Phản ánh DVKH: 0357.999.999</p>
+          <p>⚪ Lấy Chữ Tâm Để Phục Vụ - Lấy Chữ Tín Để Phát Triển</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>CHÍNH SÁCH</h3>
+          <ul>
+            <li><a href="#">Chính sách ưu đãi</a></li>
+            <li><a href="#">Chính sách bảo mật</a></li>
+            <li><a href="#">Chính sách vận chuyển</a></li>
+            <li><a href="#">Chính sách đổi trả</a></li>
+            <li><a href="#">Chính sách kiểm hàng</a></li>
+            <li><a href="#">Chính sách thanh toán</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
 
     <script src="./js/showInfoProduct.js"></script>
     <script src="./js/inputNumber.js"></script>
-    <script src="./js/cart.js"></script>
+    <script src="./js/add-cart-storage.js"></script>
     <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

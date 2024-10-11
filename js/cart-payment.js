@@ -1,12 +1,14 @@
 // Lấy dữ liệu giỏ hàng từ localStorage
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-// Hiển thị sản phẩm trong giỏ hàng
 function displayCart() {
   const cartTable = document.querySelector("tbody");
   cartTable.innerHTML = ""; // Xóa dữ liệu cũ
 
   cart.forEach((product) => {
+    // Đảm bảo rằng product.price tồn tại, nếu không, dùng giá trị mặc định là 0
+    const productPrice = product.price ? product.price : 0;
+
     const productRow = `
             <tr data-id="${product.id}">
               <td>${product.id}</td>
@@ -24,13 +26,14 @@ function displayCart() {
                 }" min="1">
               </td>
               <td>
-                <span class="product-price">${product.price.toLocaleString()}<sup>đ</sup></span>
+                <span class="product-price">${productPrice.toLocaleString()}<sup>đ</sup></span>
               </td>
               <td class="delete-product" style="cursor: pointer">xóa</td>
             </tr>
           `;
     cartTable.innerHTML += productRow;
   });
+
   handleDeleteProduct();
   handleQuantityChange();
   calculateCartTotal(); // Cập nhật tổng tiền ban đầu

@@ -117,12 +117,12 @@ header {
 }
 
 /* -----menu-nav-bar------ */
-.menu-nav-bar {
+/* .menu-nav-bar {
   height: 30px;
   list-style: none;
   position: relative;
   background-color: rgb(244, 119, 140);
-}
+} */
 
 .menu-nav-bar ul {
   list-style: none;

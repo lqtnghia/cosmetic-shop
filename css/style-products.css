@@ -4,9 +4,9 @@
 main .container {
   background-color: rgb(255, 255, 255);
 }
-body {
-  background-color: rgb(245, 130, 133);
-}
+/* body {
+  background-color: rgb(198, 195, 195);
+} */
 
 /* ==================main-content======================== */
 .main-content {
