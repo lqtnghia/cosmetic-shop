@@ -138,6 +138,7 @@ main .container {
   border: none;
   cursor: pointer;
   border-radius: 5px;
+  margin-bottom: 10px;
 }
 .addcart:hover {
   background-color: #ec8e4f; /* Thay đổi màu khi hover */

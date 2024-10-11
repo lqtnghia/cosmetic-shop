@@ -20,6 +20,7 @@ header {
 .list-sale-product .product:hover {
   transform: translateY(-10px); /* Nổi lên 10px khi hover */
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2); /* Tạo bóng đổ khi hover */
+  border-radius: 5px;
 }
 .list-hot-product,
 .list-sale-product {
@@ -205,6 +206,8 @@ header {
   margin-top: 30px;
 }
 .list-hot-product {
+  background-color: antiquewhite;
+  border-radius: 5px;
   padding: 20px;
 }
 

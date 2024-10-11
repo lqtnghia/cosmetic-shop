@@ -10,6 +10,8 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  background-color: white;
+  border-radius: 5px;
 }
 .product .feature {
   position: absolute;
@@ -50,6 +52,9 @@
 .detail-product h6:hover {
   text-decoration: underline;
 }
+.detail-product span {
+  text-align: center;
+}
 
 .price {
   display: flex;
@@ -70,9 +75,7 @@
   vertical-align: baseline;
   color: #e65c00;
 }
-/* .product button {
-  margin-left: 19%;
-} */
+
 .addcart {
   display: flex;
   align-items: center;
@@ -85,6 +88,7 @@
   border: none;
   cursor: pointer;
   border-radius: 5px;
+  margin-bottom: 10px;
 }
 .addcart:hover {
   background-color: #ec8e4f; /* Thay đổi màu khi hover */

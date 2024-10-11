@@ -77,6 +77,7 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  margin-left: 10px;
 }
 
 .right-cart .total-price {
