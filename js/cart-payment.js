@@ -10,27 +10,27 @@ function displayCart() {
     const productPrice = product.price ? product.price : 0;
 
     const productRow = `
-            <tr data-id="${product.id}">
-              <td>${product.id}</td>
-              <td style="display: flex; align-items: center; justify-content: center;">
-                <div style="display: flex; align-items: center;">
-                  <img style="width: 10vw; margin-right: 10px;" src="${
-                    product.img
-                  }" alt="${product.name}">
-                  <span class="name">${product.name}</span>
-                </div>
-              </td>
-              <td>
-                <input class="quantity" style="width: 5vw; outline: none" type="number" value="${
-                  product.quantity
-                }" min="1">
-              </td>
-              <td>
-                <span class="product-price">${productPrice.toLocaleString()}<sup>đ</sup></span>
-              </td>
-              <td class="delete-product" style="cursor: pointer">xóa</td>
-            </tr>
-          `;
+              <tr data-id="${product.id}">
+                <td>${product.id}</td>
+                <td style="display: flex; align-items: center; justify-content: center;">
+                  <div style="display: flex; align-items: center;">
+                    <img style="width: 10vw; margin-right: 10px;" src="${
+                      product.img
+                    }" alt="${product.name}">
+                    <span class="name">${product.name}</span>
+                  </div>
+                </td>
+                <td>
+                  <input class="quantity" style="width: 5vw; outline: none" type="number" value="${
+                    product.quantity
+                  }" min="1">
+                </td>
+                <td>
+                  <span class="product-price">${productPrice.toLocaleString()}<sup>đ</sup></span>
+                </td>
+                <td class="delete-product" style="cursor: pointer">xóa</td>
+              </tr>
+            `;
     cartTable.innerHTML += productRow;
   });
 
