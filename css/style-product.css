@@ -52,8 +52,8 @@
 .detail-product h6:hover {
   text-decoration: underline;
 }
-.detail-product span {
-  text-align: center;
+.detail-product div {
+  margin: 0 16px;
 }
 
 .price {

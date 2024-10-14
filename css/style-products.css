@@ -110,6 +110,10 @@ main .container {
   text-align: center;
   cursor: pointer;
 }
+.detail-product div {
+  margin: 0 16px;
+}
+
 .detail-product h6:hover {
   text-decoration: underline;
 }

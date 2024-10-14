@@ -166,7 +166,9 @@ listProductHot.forEach((product) => {
             </div>
             <div class="detail-product">
               <h6>${product.brand}</h6>
-              <span>${product.name}</span>
+              <div>
+                <span>${product.name}</span>
+              </div>
               <div class="price">
                 <span class="old-price" style="text-decoration: line-through;">${product.price.toLocaleString()}<sup>đ</sup></span>
                 <span class="official-price">${(
@@ -199,7 +201,9 @@ listProductHot.forEach((product) => {
             </div>
             <div class="detail-product">
               <h6>${product.brand}</h6>
-              <span>${product.name}</span>
+              <div>
+                <span>${product.name}</span>
+              </div>
               <div class="price">
                 <span class="old-price">${product.price.toLocaleString()}<sup>đ</sup></span>
               </div>
@@ -235,7 +239,9 @@ listSaleProduct.forEach((product) => {
         </div>
         <div class="detail-product">
           <h6>${product.brand}</h6>
-          <span>${product.name}</span>
+          <div>
+                <span>${product.name}</span>
+              </div>
           <div class="price">
             <span class="old-price" style=" text-decoration: line-through;">${product.price.toLocaleString()}<sup>đ</sup></span>
             <span class="official-price">${(
